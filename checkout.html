@@ -1,0 +1,671 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - LearnHub</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+
+            </ul>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CHECKOUT PAGE ================= -->
+    <main>
+
+        <!-- Page Banner -->
+        <section class="page-banner">
+
+            <h1>Checkout</h1>
+
+            <p>
+                Complete your details and continue to payment.
+            </p>
+
+        </section>
+
+
+        <!-- ================= CHECKOUT SECTION ================= -->
+        <section class="checkout-section">
+
+            <div class="checkout-container">
+
+
+                <!-- ================= CUSTOMER DETAILS ================= -->
+                <div class="customer-details">
+
+                    <h2>
+                        Billing Information
+                    </h2>
+
+                    <form id="checkoutForm">
+
+
+                        <!-- Full Name -->
+                        <div class="form-group">
+
+                            <label for="checkoutName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="checkoutName"
+                                name="name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="checkoutEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="checkoutEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div class="form-group">
+
+                            <label for="checkoutPhone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="checkoutPhone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                maxlength="10"
+                                pattern="[0-9]{10}"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Address -->
+                        <div class="form-group">
+
+                            <label for="address">
+                                Address
+                            </label>
+
+                            <textarea
+                                id="address"
+                                name="address"
+                                rows="4"
+                                placeholder="Enter your address"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- City -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="Enter city"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- State -->
+                            <div class="form-group">
+
+                                <label for="state">
+                                    State
+                                </label>
+
+                                <select
+                                    id="state"
+                                    name="state"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select State
+                                    </option>
+
+                                    <option value="Andhra Pradesh">
+                                        Andhra Pradesh
+                                    </option>
+
+                                    <option value="Telangana">
+                                        Telangana
+                                    </option>
+
+                                    <option value="Karnataka">
+                                        Karnataka
+                                    </option>
+
+                                    <option value="Tamil Nadu">
+                                        Tamil Nadu
+                                    </option>
+
+                                    <option value="Maharashtra">
+                                        Maharashtra
+                                    </option>
+
+                                    <option value="Kerala">
+                                        Kerala
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PIN Code -->
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                PIN Code
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pincode"
+                                name="pincode"
+                                placeholder="Enter PIN code"
+                                maxlength="6"
+                                pattern="[0-9]{6}"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Payment Method -->
+                        <div class="payment-method">
+
+                            <h3>
+                                Payment Method
+                            </h3>
+
+                            <label class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="card"
+                                    checked
+                                >
+
+                                💳 Credit / Debit Card
+
+                            </label>
+
+
+                            <label class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="upi"
+                                >
+
+                                📱 UPI
+
+                            </label>
+
+
+                            <label class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="netbanking"
+                                >
+
+                                🏦 Net Banking
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- Continue to Payment -->
+                        <button
+                            type="submit"
+                            class="checkout-submit-btn"
+                        >
+                            Continue to Payment
+                        </button>
+
+
+                        <!-- Message -->
+                        <p
+                            id="checkoutMessage"
+                            class="form-message"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+
+                <!-- ================= ORDER SUMMARY ================= -->
+                <aside class="checkout-summary">
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+
+                    <!-- Cart Items -->
+                    <div id="checkoutItems">
+
+                        <!-- JavaScript will add cart items here -->
+
+                        <div class="checkout-item">
+
+                            <div>
+
+                                <h3>
+                                    Your Selected Courses
+                                </h3>
+
+                                <p>
+                                    Courses added to your cart
+                                    will appear here.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Price Details -->
+                    <div class="checkout-price-details">
+
+                        <div class="summary-row">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <span id="checkoutSubtotal">
+                                ₹0
+                            </span>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                Discount
+                            </span>
+
+                            <span id="checkoutDiscount">
+                                ₹0
+                            </span>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                Tax
+                            </span>
+
+                            <span id="checkoutTax">
+                                ₹0
+                            </span>
+
+                        </div>
+
+                        <hr>
+
+
+                        <div class="summary-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <span id="checkoutTotal">
+                                ₹0
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Secure Payment Notice -->
+                    <div class="secure-payment">
+
+                        <span>
+                            🔒
+                        </span>
+
+                        <p>
+                            Your payment information is
+                            securely processed.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BENEFITS ================= -->
+        <section class="checkout-benefits">
+
+            <h2>
+                What You Get
+            </h2>
+
+            <div class="features-container">
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📚
+                    </div>
+
+                    <h3>
+                        Lifetime Access
+                    </h3>
+
+                    <p>
+                        Access your purchased courses
+                        whenever you want.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Learn at Your Pace
+                    </h3>
+
+                    <p>
+                        Study lessons according to
+                        your own schedule.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🏆
+                    </div>
+
+                    <h3>
+                        Course Completion
+                    </h3>
+
+                    <p>
+                        Complete your courses and
+                        track your learning progress.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Online Learning
+                    </h3>
+
+                    <p>
+                        Learn from your computer,
+                        tablet or mobile device.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-section">
+
+                <h3>
+                    LearnHub
+                </h3>
+
+                <p>
+                    Learn new skills and build your future
+                    with our online learning platform.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Student -->
+            <div class="footer-section">
+
+                <h3>
+                    Student
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">
+                            Register
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="my-courses.html">
+                            My Courses
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-section">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    Email: support@learnhub.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

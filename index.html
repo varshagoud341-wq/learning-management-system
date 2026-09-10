@@ -1,0 +1,464 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub - Online Learning Platform</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+
+            <!-- Authentication Buttons -->
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Learn New Skills.
+                    <br>
+                    Build Your Future.
+                </h1>
+
+                <p>
+                    Explore high-quality online courses and learn
+                    skills that can help you achieve your goals.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="courses.html" class="primary-btn">
+                        Explore Courses
+                    </a>
+
+                    <a href="register.html" class="secondary-btn">
+                        Get Started
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH SECTION ================= -->
+        <section class="search-section">
+
+            <h2>Find Your Perfect Course</h2>
+
+            <p>
+                Search from our wide range of courses.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="courseSearch"
+                    placeholder="Search for a course..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+        <section class="categories">
+
+            <h2>Explore Categories</h2>
+
+            <div class="category-container">
+
+                <div class="category-card">
+                    <h3>💻 Programming</h3>
+                    <p>Learn C, C++, Java and Python.</p>
+                </div>
+
+                <div class="category-card">
+                    <h3>🌐 Web Development</h3>
+                    <p>Learn HTML, CSS, JavaScript and more.</p>
+                </div>
+
+                <div class="category-card">
+                    <h3>🤖 Artificial Intelligence</h3>
+                    <p>Explore AI and Machine Learning.</p>
+                </div>
+
+                <div class="category-card">
+                    <h3>📊 Data Science</h3>
+                    <p>Learn data analysis and visualization.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POPULAR COURSES ================= -->
+        <section class="popular-courses">
+
+            <h2>Popular Courses</h2>
+
+            <p class="section-description">
+                Start learning from our most popular courses.
+            </p>
+
+            <div class="course-container">
+
+                <!-- Course 1 -->
+                <div class="course-card">
+
+                    <img
+                        src="images/course1.jpg"
+                        alt="HTML and CSS Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Web Development
+                        </span>
+
+                        <h3>HTML & CSS for Beginners</h3>
+
+                        <p>
+                            Learn the fundamentals of HTML and CSS
+                            and build your first website.
+                        </p>
+
+                        <div class="course-info">
+                            <span>⭐ 4.8</span>
+                            <span>⏱ 20 Hours</span>
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">₹499</span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Course 2 -->
+                <div class="course-card">
+
+                    <img
+                        src="images/course2.jpg"
+                        alt="JavaScript Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>JavaScript for Beginners</h3>
+
+                        <p>
+                            Learn JavaScript fundamentals and create
+                            interactive web applications.
+                        </p>
+
+                        <div class="course-info">
+                            <span>⭐ 4.7</span>
+                            <span>⏱ 25 Hours</span>
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">₹699</span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Course 3 -->
+                <div class="course-card">
+
+                    <img
+                        src="images/course3.jpg"
+                        alt="Python Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>Python Programming</h3>
+
+                        <p>
+                            Learn Python from the basics and develop
+                            useful programming skills.
+                        </p>
+
+                        <div class="course-info">
+                            <span>⭐ 4.9</span>
+                            <span>⏱ 30 Hours</span>
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">₹799</span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- View All Courses -->
+            <div class="view-all">
+
+                <a href="courses.html" class="primary-btn">
+                    View All Courses
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY CHOOSE US ================= -->
+        <section class="why-us">
+
+            <h2>Why Choose LearnHub?</h2>
+
+            <div class="features-container">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">📚</div>
+
+                    <h3>Quality Courses</h3>
+
+                    <p>
+                        Learn from carefully designed courses
+                        created for students and beginners.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">👨‍🏫</div>
+
+                    <h3>Expert Instructors</h3>
+
+                    <p>
+                        Learn concepts from experienced instructors
+                        through easy-to-understand lessons.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">💻</div>
+
+                    <h3>Learn Anywhere</h3>
+
+                    <p>
+                        Access your courses and continue learning
+                        whenever and wherever you want.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🏆</div>
+
+                    <h3>Track Your Progress</h3>
+
+                    <p>
+                        Track your learning progress and complete
+                        your courses step by step.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CALL TO ACTION ================= -->
+        <section class="cta">
+
+            <div class="cta-content">
+
+                <h2>Ready to Start Learning?</h2>
+
+                <p>
+                    Join LearnHub today and start building
+                    new skills for your future.
+                </p>
+
+                <a href="register.html" class="primary-btn">
+                    Create Your Account
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-section">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future
+                    with our online learning platform.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- Student Links -->
+            <div class="footer-section">
+
+                <h3>Student</h3>
+
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="my-courses.html">My Courses</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-section">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: support@learnhub.com</p>
+                <p>Phone: +91 98765 43210</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

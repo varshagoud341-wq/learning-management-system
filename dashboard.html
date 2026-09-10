@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub - Student Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">LearnHub</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Dashboard Banner -->
+    <section class="dashboard-banner">
+
+        <div class="dashboard-banner-content">
+            <h1>Student Dashboard</h1>
+            <p>Welcome back! Continue your learning journey.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Dashboard -->
+    <section class="dashboard-section">
+
+        <div class="dashboard-container">
+
+            <!-- Welcome Card -->
+            <div class="welcome-card">
+
+                <div>
+                    <h2>Welcome, Student! 👋</h2>
+                    <p>
+                        Keep learning and complete your courses to improve your skills.
+                    </p>
+                </div>
+
+                <a href="courses.html" class="dashboard-btn">
+                    Explore Courses
+                </a>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="dashboard-stats">
+
+                <div class="stat-card">
+                    <div class="stat-icon">📚</div>
+                    <h3 id="totalCourses">0</h3>
+                    <p>Enrolled Courses</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <h3 id="completedCourses">0</h3>
+                    <p>Completed Courses</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <h3 id="learningProgress">0%</h3>
+                    <p>Overall Progress</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <h3 id="certificates">0</h3>
+                    <p>Certificates</p>
+                </div>
+
+            </div>
+
+
+            <!-- Continue Learning -->
+            <div class="dashboard-content">
+
+                <div class="dashboard-main">
+
+                    <div class="dashboard-heading">
+                        <h2>Continue Learning</h2>
+
+                        <a href="my-courses.html">
+                            View All
+                        </a>
+                    </div>
+
+
+                    <!-- Course Progress Card -->
+                    <div class="learning-card">
+
+                        <div class="learning-image">
+                            <img src="images/course1.jpg"
+                                 alt="HTML and CSS Course">
+                        </div>
+
+                        <div class="learning-info">
+
+                            <span class="course-category">
+                                Web Development
+                            </span>
+
+                            <h3>HTML & CSS for Beginners</h3>
+
+                            <p>
+                                Learn the basics of HTML and CSS and create
+                                beautiful websites.
+                            </p>
+
+                            <div class="progress-info">
+                                <span>Course Progress</span>
+                                <span id="courseProgressText">40%</span>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div
+                                    class="progress-fill"
+                                    id="courseProgressBar"
+                                    style="width: 40%;">
+                                </div>
+                            </div>
+
+                            <a href="course-details.html"
+                               class="continue-btn">
+                                Continue Learning
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Another Course -->
+                    <div class="learning-card">
+
+                        <div class="learning-image">
+                            <img src="images/course2.jpg"
+                                 alt="JavaScript Course">
+                        </div>
+
+                        <div class="learning-info">
+
+                            <span class="course-category">
+                                Programming
+                            </span>
+
+                            <h3>JavaScript for Beginners</h3>
+
+                            <p>
+                                Learn JavaScript fundamentals and build
+                                interactive web pages.
+                            </p>
+
+                            <div class="progress-info">
+                                <span>Course Progress</span>
+                                <span>20%</span>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div
+                                    class="progress-fill"
+                                    style="width: 20%;">
+                                </div>
+                            </div>
+
+                            <a href="course-details.html"
+                               class="continue-btn">
+                                Continue Learning
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Sidebar -->
+                <aside class="dashboard-sidebar">
+
+                    <!-- Quick Links -->
+                    <div class="dashboard-sidebar-card">
+
+                        <h2>Quick Links</h2>
+
+                        <a href="my-courses.html">
+                            📚 My Courses
+                        </a>
+
+                        <a href="profile.html">
+                            👤 My Profile
+                        </a>
+
+                        <a href="wishlist.html">
+                            ❤️ Wishlist
+                        </a>
+
+                        <a href="orders.html">
+                            🛒 Order History
+                        </a>
+
+                        <a href="courses.html">
+                            🔍 Browse Courses
+                        </a>
+
+                    </div>
+
+
+                    <!-- Learning Tips -->
+                    <div class="dashboard-sidebar-card">
+
+                        <h2>Learning Tip 💡</h2>
+
+                        <p>
+                            Practice regularly and complete your lessons
+                            step by step for better learning.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Achievements -->
+    <section class="achievements-section">
+
+        <div class="achievements-container">
+
+            <h2>Your Achievements</h2>
+
+            <div class="achievement-cards">
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🔥</div>
+                    <h3>Getting Started</h3>
+                    <p>Start your first course.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">📖</div>
+                    <h3>Fast Learner</h3>
+                    <p>Complete multiple lessons.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Course Champion</h3>
+                    <p>Complete a full course.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future with LearnHub.
+                </p>
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Student</h3>
+
+                <a href="dashboard.html">Dashboard</a>
+                <a href="my-courses.html">My Courses</a>
+                <a href="profile.html">Profile</a>
+                <a href="wishlist.html">Wishlist</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

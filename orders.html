@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub - Order History</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">LearnHub</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+
+        <h1>Order History</h1>
+
+        <p>
+            View your previous course purchases and payment details.
+        </p>
+
+    </section>
+
+
+    <!-- Orders Section -->
+    <section class="orders-section">
+
+        <div class="orders-container">
+
+            <!-- Orders Heading -->
+            <div class="section-heading">
+
+                <div>
+                    <h2>My Orders</h2>
+
+                    <p>
+                        Here you can view your course order history.
+                    </p>
+                </div>
+
+                <a href="courses.html" class="dashboard-btn">
+                    Buy New Course
+                </a>
+
+            </div>
+
+
+            <!-- Orders Table -->
+            <div class="orders-table-container">
+
+                <table class="orders-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Course</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="ordersTableBody">
+
+                        <!-- Order 1 -->
+                        <tr>
+
+                            <td>
+                                LH20260001
+                            </td>
+
+                            <td>
+                                HTML & CSS for Beginners
+                            </td>
+
+                            <td>
+                                05 Sep 2026
+                            </td>
+
+                            <td>
+                                ₹499
+                            </td>
+
+                            <td>
+                                Demo Card
+                            </td>
+
+                            <td>
+                                <span class="order-status success">
+                                    Paid
+                                </span>
+                            </td>
+
+                            <td>
+                                <a
+                                    href="my-courses.html"
+                                    class="order-view-btn"
+                                >
+                                    View
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- Order 2 -->
+                        <tr>
+
+                            <td>
+                                LH20260002
+                            </td>
+
+                            <td>
+                                JavaScript for Beginners
+                            </td>
+
+                            <td>
+                                02 Sep 2026
+                            </td>
+
+                            <td>
+                                ₹699
+                            </td>
+
+                            <td>
+                                Demo UPI
+                            </td>
+
+                            <td>
+                                <span class="order-status success">
+                                    Paid
+                                </span>
+                            </td>
+
+                            <td>
+                                <a
+                                    href="my-courses.html"
+                                    class="order-view-btn"
+                                >
+                                    View
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- Order 3 -->
+                        <tr>
+
+                            <td>
+                                LH20260003
+                            </td>
+
+                            <td>
+                                Python Programming
+                            </td>
+
+                            <td>
+                                28 Aug 2026
+                            </td>
+
+                            <td>
+                                ₹799
+                            </td>
+
+                            <td>
+                                Demo Card
+                            </td>
+
+                            <td>
+                                <span class="order-status success">
+                                    Paid
+                                </span>
+                            </td>
+
+                            <td>
+                                <a
+                                    href="my-courses.html"
+                                    class="order-view-btn"
+                                >
+                                    View
+                                </a>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- Mobile Order Cards -->
+            <div
+                id="mobileOrders"
+                class="mobile-orders"
+            >
+
+                <div class="order-card">
+
+                    <div class="order-card-header">
+
+                        <h3>
+                            HTML & CSS for Beginners
+                        </h3>
+
+                        <span class="order-status success">
+                            Paid
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <strong>Order ID:</strong> LH20260001
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong> 05 Sep 2026
+                    </p>
+
+                    <p>
+                        <strong>Amount:</strong> ₹499
+                    </p>
+
+                    <a
+                        href="my-courses.html"
+                        class="order-view-btn"
+                    >
+                        View Course
+                    </a>
+
+                </div>
+
+
+                <div class="order-card">
+
+                    <div class="order-card-header">
+
+                        <h3>
+                            JavaScript for Beginners
+                        </h3>
+
+                        <span class="order-status success">
+                            Paid
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <strong>Order ID:</strong> LH20260002
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong> 02 Sep 2026
+                    </p>
+
+                    <p>
+                        <strong>Amount:</strong> ₹699
+                    </p>
+
+                    <a
+                        href="my-courses.html"
+                        class="order-view-btn"
+                    >
+                        View Course
+                    </a>
+
+                </div>
+
+
+                <div class="order-card">
+
+                    <div class="order-card-header">
+
+                        <h3>
+                            Python Programming
+                        </h3>
+
+                        <span class="order-status success">
+                            Paid
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <strong>Order ID:</strong> LH20260003
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong> 28 Aug 2026
+                    </p>
+
+                    <p>
+                        <strong>Amount:</strong> ₹799
+                    </p>
+
+                    <a
+                        href="my-courses.html"
+                        class="order-view-btn"
+                    >
+                        View Course
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Empty Orders -->
+            <div
+                id="emptyOrders"
+                class="empty-courses"
+                style="display: none;"
+            >
+
+                <div class="empty-icon">
+                    🛒
+                </div>
+
+                <h2>No Orders Found</h2>
+
+                <p>
+                    You haven't purchased any courses yet.
+                </p>
+
+                <a
+                    href="courses.html"
+                    class="dashboard-btn"
+                >
+                    Explore Courses
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Order Information -->
+    <section class="order-info-section">
+
+        <div class="order-info-container">
+
+            <h2>Order Information</h2>
+
+            <div class="order-info-grid">
+
+                <div class="order-info-card">
+
+                    <div class="order-info-icon">
+                        📋
+                    </div>
+
+                    <h3>Order Details</h3>
+
+                    <p>
+                        Check your course purchase and order information.
+                    </p>
+
+                </div>
+
+
+                <div class="order-info-card">
+
+                    <div class="order-info-icon">
+                        💳
+                    </div>
+
+                    <h3>Payment Details</h3>
+
+                    <p>
+                        View the payment method and payment status
+                        for your orders.
+                    </p>
+
+                </div>
+
+
+                <div class="order-info-card">
+
+                    <div class="order-info-icon">
+                        📚
+                    </div>
+
+                    <h3>Access Courses</h3>
+
+                    <p>
+                        Access your purchased courses from My Courses.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future with LearnHub.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Student</h3>
+
+                <a href="dashboard.html">Dashboard</a>
+                <a href="my-courses.html">My Courses</a>
+                <a href="profile.html">Profile</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="orders.html">Order History</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

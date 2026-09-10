@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub - Wishlist</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">LearnHub</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+
+        <h1>My Wishlist</h1>
+
+        <p>
+            Save courses you want to learn later.
+        </p>
+
+    </section>
+
+
+    <!-- Wishlist Section -->
+    <section class="wishlist-section">
+
+        <div class="wishlist-container">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Saved Courses ❤️</h2>
+
+                    <p>
+                        Your favorite courses are saved here.
+                    </p>
+                </div>
+
+                <a href="courses.html" class="dashboard-btn">
+                    Explore Courses
+                </a>
+
+            </div>
+
+
+            <!-- Wishlist Courses -->
+            <div id="wishlistItems" class="wishlist-grid">
+
+                <!-- Course 1 -->
+                <div class="wishlist-card">
+
+                    <div class="wishlist-image">
+
+                        <img
+                            src="images/course5.jpg"
+                            alt="Data Science Course"
+                        >
+
+                    </div>
+
+                    <div class="wishlist-content">
+
+                        <span class="course-category">
+                            Data Science
+                        </span>
+
+                        <h3>
+                            Data Science Fundamentals
+                        </h3>
+
+                        <p>
+                            Learn the fundamentals of data science,
+                            data analysis and visualization.
+                        </p>
+
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.8</span>
+                        </div>
+
+                        <div class="wishlist-price">
+                            ₹899
+                        </div>
+
+                        <div class="wishlist-buttons">
+
+                            <a
+                                href="course-details.html"
+                                class="continue-btn"
+                            >
+                                View Course
+                            </a>
+
+                            <button
+                                type="button"
+                                class="remove-wishlist-btn"
+                            >
+                                Remove
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Course 2 -->
+                <div class="wishlist-card">
+
+                    <div class="wishlist-image">
+
+                        <img
+                            src="images/course6.jpg"
+                            alt="Artificial Intelligence Course"
+                        >
+
+                    </div>
+
+                    <div class="wishlist-content">
+
+                        <span class="course-category">
+                            Artificial Intelligence
+                        </span>
+
+                        <h3>
+                            Artificial Intelligence Basics
+                        </h3>
+
+                        <p>
+                            Understand the basic concepts of AI
+                            and its real-world applications.
+                        </p>
+
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.7</span>
+                        </div>
+
+                        <div class="wishlist-price">
+                            ₹999
+                        </div>
+
+                        <div class="wishlist-buttons">
+
+                            <a
+                                href="course-details.html"
+                                class="continue-btn"
+                            >
+                                View Course
+                            </a>
+
+                            <button
+                                type="button"
+                                class="remove-wishlist-btn"
+                            >
+                                Remove
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Course 3 -->
+                <div class="wishlist-card">
+
+                    <div class="wishlist-image">
+
+                        <img
+                            src="images/course7.jpg"
+                            alt="Full Stack Web Development Course"
+                        >
+
+                    </div>
+
+                    <div class="wishlist-content">
+
+                        <span class="course-category">
+                            Web Development
+                        </span>
+
+                        <h3>
+                            Full Stack Web Development
+                        </h3>
+
+                        <p>
+                            Learn frontend and backend development
+                            and build complete web applications.
+                        </p>
+
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.9</span>
+                        </div>
+
+                        <div class="wishlist-price">
+                            ₹1,499
+                        </div>
+
+                        <div class="wishlist-buttons">
+
+                            <a
+                                href="course-details.html"
+                                class="continue-btn"
+                            >
+                                View Course
+                            </a>
+
+                            <button
+                                type="button"
+                                class="remove-wishlist-btn"
+                            >
+                                Remove
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Empty Wishlist -->
+            <div
+                id="emptyWishlist"
+                class="empty-courses"
+                style="display: none;"
+            >
+
+                <div class="empty-icon">
+                    ❤️
+                </div>
+
+                <h2>Your Wishlist is Empty</h2>
+
+                <p>
+                    Save your favorite courses here and learn them later.
+                </p>
+
+                <a
+                    href="courses.html"
+                    class="dashboard-btn"
+                >
+                    Explore Courses
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Wishlist Benefits -->
+    <section class="learning-benefits">
+
+        <div class="learning-benefits-container">
+
+            <h2>Why Use Wishlist?</h2>
+
+            <div class="benefit-grid">
+
+                <div class="benefit-card">
+
+                    <h3>❤️ Save Favorites</h3>
+
+                    <p>
+                        Keep interesting courses in one place.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <h3>⏰ Learn Later</h3>
+
+                    <p>
+                        Save courses and come back whenever you are ready.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <h3>🎯 Choose Easily</h3>
+
+                    <p>
+                        Compare your saved courses before enrolling.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future with LearnHub.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Student</h3>
+
+                <a href="dashboard.html">Dashboard</a>
+                <a href="my-courses.html">My Courses</a>
+                <a href="profile.html">Profile</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="orders.html">Order History</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

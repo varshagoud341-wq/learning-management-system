@@ -1,0 +1,759 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses - LearnHub</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+
+            </ul>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PAGE BANNER ================= -->
+    <main>
+
+        <section class="page-banner">
+
+            <h1>Explore Our Courses</h1>
+
+            <p>
+                Learn new skills from our wide range of courses.
+            </p>
+
+        </section>
+
+
+        <!-- ================= COURSE SEARCH ================= -->
+        <section class="course-search">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="courseSearch"
+                    placeholder="Search courses..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COURSE CATEGORIES ================= -->
+        <section class="course-categories">
+
+            <h2>Course Categories</h2>
+
+            <div class="category-buttons">
+
+                <button class="category-btn">
+                    All
+                </button>
+
+                <button class="category-btn">
+                    Programming
+                </button>
+
+                <button class="category-btn">
+                    Web Development
+                </button>
+
+                <button class="category-btn">
+                    Data Science
+                </button>
+
+                <button class="category-btn">
+                    Artificial Intelligence
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COURSES ================= -->
+        <section class="all-courses">
+
+            <h2>All Courses</h2>
+
+            <div class="course-container">
+
+
+                <!-- ================= COURSE 1 ================= -->
+                <div
+                    class="course-card"
+                    data-category="Web Development"
+                >
+
+                    <img
+                        src="images/course1.jpg"
+                        alt="HTML and CSS Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Web Development
+                        </span>
+
+                        <h3>HTML & CSS for Beginners</h3>
+
+                        <p>
+                            Learn HTML and CSS from the basics
+                            and build beautiful web pages.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>⭐ 4.8</span>
+
+                            <span>⏱ 20 Hours</span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">
+                                ₹499
+                            </span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Details
+                            </a>
+
+                        </div>
+
+                        <button
+                            class="add-cart-btn"
+                            data-course="HTML & CSS for Beginners"
+                            data-price="499"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 2 ================= -->
+                <div
+                    class="course-card"
+                    data-category="Programming"
+                >
+
+                    <img
+                        src="images/course2.jpg"
+                        alt="JavaScript Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>JavaScript for Beginners</h3>
+
+                        <p>
+                            Learn JavaScript and create interactive
+                            websites from scratch.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>⭐ 4.7</span>
+
+                            <span>⏱ 25 Hours</span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">
+                                ₹699
+                            </span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Details
+                            </a>
+
+                        </div>
+
+                        <button
+                            class="add-cart-btn"
+                            data-course="JavaScript for Beginners"
+                            data-price="699"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 3 ================= -->
+                <div
+                    class="course-card"
+                    data-category="Programming"
+                >
+
+                    <img
+                        src="images/course3.jpg"
+                        alt="Python Programming Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>Python Programming</h3>
+
+                        <p>
+                            Master Python programming from basic
+                            concepts to practical applications.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>⭐ 4.9</span>
+
+                            <span>⏱ 30 Hours</span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">
+                                ₹799
+                            </span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Details
+                            </a>
+
+                        </div>
+
+                        <button
+                            class="add-cart-btn"
+                            data-course="Python Programming"
+                            data-price="799"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 4 ================= -->
+                <div
+                    class="course-card"
+                    data-category="Programming"
+                >
+
+                    <img
+                        src="images/course4.jpg"
+                        alt="C Programming Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>C Programming</h3>
+
+                        <p>
+                            Learn C programming fundamentals,
+                            loops, arrays, functions and more.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>⭐ 4.6</span>
+
+                            <span>⏱ 18 Hours</span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">
+                                ₹399
+                            </span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Details
+                            </a>
+
+                        </div>
+
+                        <button
+                            class="add-cart-btn"
+                            data-course="C Programming"
+                            data-price="399"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 5 ================= -->
+                <div
+                    class="course-card"
+                    data-category="Data Science"
+                >
+
+                    <img
+                        src="images/course5.jpg"
+                        alt="Data Science Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Data Science
+                        </span>
+
+                        <h3>Data Science Fundamentals</h3>
+
+                        <p>
+                            Learn the basics of data analysis,
+                            visualization and data science.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>⭐ 4.7</span>
+
+                            <span>⏱ 28 Hours</span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">
+                                ₹899
+                            </span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Details
+                            </a>
+
+                        </div>
+
+                        <button
+                            class="add-cart-btn"
+                            data-course="Data Science Fundamentals"
+                            data-price="899"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 6 ================= -->
+                <div
+                    class="course-card"
+                    data-category="Artificial Intelligence"
+                >
+
+                    <img
+                        src="images/course6.jpg"
+                        alt="Artificial Intelligence Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Artificial Intelligence
+                        </span>
+
+                        <h3>Artificial Intelligence Basics</h3>
+
+                        <p>
+                            Understand AI concepts and explore
+                            real-world applications.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>⭐ 4.8</span>
+
+                            <span>⏱ 32 Hours</span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">
+                                ₹999
+                            </span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Details
+                            </a>
+
+                        </div>
+
+                        <button
+                            class="add-cart-btn"
+                            data-course="Artificial Intelligence Basics"
+                            data-price="999"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 7 ================= -->
+                <div
+                    class="course-card"
+                    data-category="Web Development"
+                >
+
+                    <img
+                        src="images/course7.jpg"
+                        alt="Full Stack Web Development Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Web Development
+                        </span>
+
+                        <h3>Full Stack Web Development</h3>
+
+                        <p>
+                            Learn frontend and backend development
+                            and build complete web applications.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>⭐ 4.9</span>
+
+                            <span>⏱ 45 Hours</span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">
+                                ₹1,499
+                            </span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Details
+                            </a>
+
+                        </div>
+
+                        <button
+                            class="add-cart-btn"
+                            data-course="Full Stack Web Development"
+                            data-price="1499"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 8 ================= -->
+                <div
+                    class="course-card"
+                    data-category="Programming"
+                >
+
+                    <img
+                        src="images/course8.jpg"
+                        alt="Java Programming Course"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>Java Programming</h3>
+
+                        <p>
+                            Learn Java programming, OOP concepts,
+                            classes, objects and more.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>⭐ 4.8</span>
+
+                            <span>⏱ 35 Hours</span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="price">
+                                ₹899
+                            </span>
+
+                            <a
+                                href="course-details.html"
+                                class="course-btn"
+                            >
+                                View Details
+                            </a>
+
+                        </div>
+
+                        <button
+                            class="add-cart-btn"
+                            data-course="Java Programming"
+                            data-price="899"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CART LINK ================= -->
+        <section class="cart-preview">
+
+            <h2>Ready to Checkout?</h2>
+
+            <p>
+                View the courses you have added to your cart.
+            </p>
+
+            <a
+                href="cart.html"
+                class="primary-btn"
+            >
+                Go to Cart
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-section">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future
+                    with our online learning platform.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">Courses</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Student -->
+            <div class="footer-section">
+
+                <h3>Student</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">Register</a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="my-courses.html">My Courses</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-section">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    Email: support@learnhub.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

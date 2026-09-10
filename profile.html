@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub - My Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">LearnHub</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+
+        <h1>My Profile</h1>
+
+        <p>
+            View and manage your LearnHub profile.
+        </p>
+
+    </section>
+
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+
+        <div class="profile-container">
+
+            <!-- Profile Card -->
+            <div class="profile-card">
+
+                <div class="profile-avatar">
+                    👤
+                </div>
+
+                <h2 id="profileDisplayName">
+                    Student Name
+                </h2>
+
+                <p id="profileDisplayEmail">
+                    student@example.com
+                </p>
+
+                <p class="profile-role">
+                    Student
+                </p>
+
+                <div class="profile-links">
+
+                    <a href="dashboard.html">
+                        📊 Dashboard
+                    </a>
+
+                    <a href="my-courses.html">
+                        📚 My Courses
+                    </a>
+
+                    <a href="wishlist.html">
+                        ❤️ Wishlist
+                    </a>
+
+                    <a href="orders.html">
+                        🛒 Order History
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Profile Form -->
+            <div class="profile-form-box">
+
+                <h2>Personal Information</h2>
+
+                <p>
+                    Update your profile information below.
+                </p>
+
+                <form id="profileForm">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="profileName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="profileName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="profileEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="profileEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label for="profilePhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="profilePhone"
+                            placeholder="Enter 10-digit phone number"
+                            maxlength="10"
+                            pattern="[0-9]{10}"
+                        >
+
+                    </div>
+
+
+                    <!-- Date of Birth -->
+                    <div class="form-group">
+
+                        <label for="dateOfBirth">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dateOfBirth"
+                        >
+
+                    </div>
+
+
+                    <!-- Gender -->
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select id="gender">
+
+                            <option value="">
+                                Select Gender
+                            </option>
+
+                            <option value="female">
+                                Female
+                            </option>
+
+                            <option value="male">
+                                Male
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Bio -->
+                    <div class="form-group">
+
+                        <label for="profileBio">
+                            About Me
+                        </label>
+
+                        <textarea
+                            id="profileBio"
+                            rows="4"
+                            placeholder="Write something about yourself..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Buttons -->
+                    <div class="profile-buttons">
+
+                        <button
+                            type="submit"
+                            class="profile-save-btn"
+                        >
+                            Save Changes
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="profile-reset-btn"
+                        >
+                            Reset
+                        </button>
+
+                    </div>
+
+
+                    <p
+                        id="profileMessage"
+                        class="form-message"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Account Settings -->
+    <section class="account-settings">
+
+        <div class="account-settings-container">
+
+            <h2>Account Settings</h2>
+
+            <div class="settings-grid">
+
+                <div class="setting-card">
+
+                    <div class="setting-icon">
+                        🔐
+                    </div>
+
+                    <div>
+                        <h3>Change Password</h3>
+
+                        <p>
+                            Update your account password.
+                        </p>
+                    </div>
+
+                    <button type="button">
+                        Change
+                    </button>
+
+                </div>
+
+
+                <div class="setting-card">
+
+                    <div class="setting-icon">
+                        🔔
+                    </div>
+
+                    <div>
+                        <h3>Notifications</h3>
+
+                        <p>
+                            Manage your learning notifications.
+                        </p>
+                    </div>
+
+                    <button type="button">
+                        Manage
+                    </button>
+
+                </div>
+
+
+                <div class="setting-card">
+
+                    <div class="setting-icon">
+                        🚪
+                    </div>
+
+                    <div>
+                        <h3>Logout</h3>
+
+                        <p>
+                            Sign out of your LearnHub account.
+                        </p>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="logoutBtn"
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future with LearnHub.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Student</h3>
+
+                <a href="dashboard.html">Dashboard</a>
+                <a href="my-courses.html">My Courses</a>
+                <a href="profile.html">Profile</a>
+                <a href="wishlist.html">Wishlist</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - LearnHub</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+
+            </ul>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= REGISTER SECTION ================= -->
+    <main>
+
+        <section class="register-section">
+
+            <div class="register-container">
+
+                <!-- Register Heading -->
+                <div class="register-header">
+
+                    <h1>Create Your Account</h1>
+
+                    <p>
+                        Join LearnHub and start your learning journey.
+                    </p>
+
+                </div>
+
+
+                <!-- Registration Form -->
+                <form id="registerForm">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="registerEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="password"
+                            placeholder="Create a password"
+                            minlength="6"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            minlength="6"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Terms and Conditions -->
+                    <div class="terms">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                required
+                            >
+
+                            I agree to the
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Register Button -->
+                    <button
+                        type="submit"
+                        class="register-submit-btn"
+                    >
+                        Create Account
+                    </button>
+
+
+                    <!-- Registration Message -->
+                    <p
+                        id="registerMessage"
+                        class="form-message"
+                    ></p>
+
+                </form>
+
+
+                <!-- Login Link -->
+                <div class="login-link">
+
+                    <p>
+
+                        Already have an account?
+
+                        <a href="login.html">
+                            Login here
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-section">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future
+                    with our online learning platform.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">Courses</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Student Links -->
+            <div class="footer-section">
+
+                <h3>Student</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">Register</a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="my-courses.html">My Courses</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-section">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    Email: support@learnhub.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```
